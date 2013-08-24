@@ -1,0 +1,4 @@
+schematics ckt-as3935.sch
+output-name ../pcb/ckt-as3935
+skip-m4
+elements-dir ../../footprints
