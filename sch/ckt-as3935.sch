@@ -34,7 +34,7 @@ refdes=U1
 T 56600 56400 5 10 1 1 0 4 1
 device=AS3935
 T 54600 59100 5 10 0 0 0 0 1
-footprint=MLPQ16
+footprint=MLPQ16_4
 }
 C 51100 55800 1 90 0 coil-1.sym
 {
