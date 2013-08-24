@@ -1230,6 +1230,10 @@ Layer(2 "solder")
 )
 Layer(3 "outline")
 (
+	Line[0 0 180000 0 1000 2000 "clearline"]
+	Line[180000 0 180000 82000 1000 2000 "clearline"]
+	Line[180000 82000 0 82000 1000 2000 "clearline"]
+	Line[0 82000 0 0 1000 2000 "clearline"]
 )
 Layer(4 "silk")
 (
