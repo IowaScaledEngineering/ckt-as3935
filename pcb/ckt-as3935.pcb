@@ -5,8 +5,8 @@ FileVersion[20070407]
 
 PCB["" 180000 82000]
 
-Grid[500.0 0 0 1]
-Cursor[80500 0 0.000000]
+Grid[500.0 0 0 0]
+Cursor[2500 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[800 800 800 800 2000 800]
@@ -825,18 +825,14 @@ Element["hidename" "modular_6p6c_lp.fp" "J2" "unknown" 33000 33500 -9843 -9500 0
 	Attribute("dist-license" "CC-BY-SA-3.0")
 	Attribute("height" "11.5mm")
 	Attribute("ref" "Molex document number 50-95501-001 R/A low profile pc jack 4,6,8 ckrs site through hole version")
-	Pin[35000 -12500 7000 2000 7600 3000 "1" "1" "edge2"]
-	Pin[25000 -7500 7000 2000 7600 3000 "2" "2" "edge2"]
-	Pin[35000 -2500 7000 2000 7600 3000 "3" "3" "edge2,thermal(1X)"]
-	Pin[25000 2500 7000 2000 7600 3000 "4" "4" "edge2"]
-	Pin[35000 7500 7000 2000 7600 3000 "5" "5" "edge2"]
-	Pin[25000 12500 7000 2000 7600 3000 "6" "6" "edge2"]
-	Pin[0 -20000 14400 2000 15000 12800 "" "" "edge2"]
-	Pin[0 20000 14400 2000 15000 12800 "" "" "edge2"]
-	ElementLine [-31000 26000 40300 26000 2000]
-	ElementLine [-31000 -26000 40300 -26000 2000]
-	ElementLine [40300 -26000 40300 26000 2000]
-	ElementLine [-31000 -26000 -31020 26000 2000]
+	Pin[35000 -12500 7000 2000 7600 3000 "1" "1" ""]
+	Pin[25000 -7500 7000 2000 7600 3000 "2" "2" ""]
+	Pin[35000 -2500 7000 2000 7600 3000 "3" "3" "thermal(1X)"]
+	Pin[25000 2500 7000 2000 7600 3000 "4" "4" ""]
+	Pin[35000 7500 7000 2000 7600 3000 "5" "5" ""]
+	Pin[25000 12500 7000 2000 7600 3000 "6" "6" ""]
+	Pin[0 -20000 14400 2000 15000 12800 "" "" ""]
+	Pin[0 20000 14400 2000 15000 12800 "" "" ""]
 
 	)
 
@@ -912,7 +908,7 @@ Element["" "0805" "C3" "0.1uF" 120000 33000 -12500 0 0 100 ""]
 
 	)
 
-Element["" "0805" "C4" "1uF" 103000 30000 -9000 3500 0 100 ""]
+Element["" "0805" "C4" "1uF" 103000 30000 -5000 3500 0 100 ""]
 (
 	Pad[3543 -393 3543 393 5118 2000 5718 "1" "1" "square"]
 	Pad[-3543 -393 -3543 393 5118 2000 5718 "2" "2" "square"]
@@ -921,16 +917,7 @@ Element["" "0805" "C4" "1uF" 103000 30000 -9000 3500 0 100 ""]
 
 	)
 
-Element["" "0805" "C5" "10uF" 126543 68000 8350 -2650 0 100 ""]
-(
-	Pad[3543 -393 3543 393 5118 2000 5718 "1" "1" "square"]
-	Pad[-3543 -393 -3543 393 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-393 2755 393 2755 1000]
-	ElementLine [-393 -2755 393 -2755 1000]
-
-	)
-
-Element["" "JUMPER3x2" "JP1" "unknown" 109500 4500 -32000 21000 0 100 ""]
+Element["" "JUMPER3x2" "JP1" "unknown" 109500 4500 -40500 -2500 0 100 ""]
 (
 	Pin[-5000 5000 6000 3000 6600 3800 "1" "1" "square,edge2"]
 	Pin[-15000 5000 6000 3000 6600 3800 "3" "3" "edge2"]
@@ -958,34 +945,6 @@ Element["" "JUMPER3" "JP4" "unknown" 153500 6000 15500 3000 0 100 ""]
 	ElementLine [5000 -5000 5000 5000 1000]
 	ElementLine [-5000 -5000 -5000 5000 1000]
 	ElementLine [-5000 5000 5000 5000 1000]
-
-	)
-
-Element["" "" "" "" 149000 25000 0 0 2 100 ""]
-(
-	ElementLine [-15000 -10000 0 -10000 1000]
-	ElementLine [-15000 -5000 0 -5000 1000]
-	ElementLine [-15000 0 0 0 1000]
-	ElementLine [-15000 -10000 -15000 0 1000]
-	ElementLine [-10000 -10000 -10000 0 1000]
-	ElementLine [-5000 -10000 -5000 0 1000]
-	ElementLine [0 -10000 0 0 1000]
-	ElementLine [-8500 -2500 -1500 -2500 1000]
-	ElementLine [-8500 -7500 -1500 -7500 1000]
-
-	)
-
-Element["" "" "" "" 134000 27500 0 0 0 100 ""]
-(
-	ElementLine [0 10000 15000 10000 1000]
-	ElementLine [15000 5000 0 5000 1000]
-	ElementLine [0 0 15000 0 1000]
-	ElementLine [15000 0 15000 10000 1000]
-	ElementLine [10000 0 10000 10000 1000]
-	ElementLine [5000 0 5000 10000 1000]
-	ElementLine [0 0 0 10000 1000]
-	ElementLine [1500 2500 8500 2500 1000]
-	ElementLine [1500 7500 8500 7500 1000]
 
 	)
 
@@ -1025,6 +984,69 @@ Element["" "JUMPER3" "JP3" "unknown" 78000 69000 -5500 -5500 3 100 ""]
 	ElementLine [-5000 -5000 5000 -5000 1000]
 
 	)
+
+Element["" "JUMPER2" "JP5" "unknown" 80000 32000 0 6500 0 100 ""]
+(
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2,thermal(1X)"]
+	ElementLine [-5000 5000 15000 5000 1000]
+	ElementLine [15000 -5000 15000 5000 1000]
+	ElementLine [-5000 -5000 15000 -5000 1000]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+	ElementLine [5000 -5000 5000 5000 1000]
+	ElementLine [-5000 -5000 5000 -5000 1000]
+
+	)
+
+Element["" "JUMPER2" "JP6" "unknown" 110000 74500 -5000 -11000 0 100 ""]
+(
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2,thermal(1X)"]
+	ElementLine [-5000 5000 15000 5000 1000]
+	ElementLine [15000 -5000 15000 5000 1000]
+	ElementLine [-5000 -5000 15000 -5000 1000]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+	ElementLine [5000 -5000 5000 5000 1000]
+	ElementLine [-5000 -5000 5000 -5000 1000]
+
+	)
+
+Element["" "0805" "C5" "10uF" 131000 73000 10000 -2000 3 100 ""]
+(
+	Pad[-393 3543 393 3543 5118 2000 5718 "1" "1" "square"]
+	Pad[-393 -3543 393 -3543 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-2755 -393 -2755 393 1000]
+	ElementLine [2755 -393 2755 393 1000]
+
+	)
+
+Element["" "" "" "" 134000 27500 0 0 0 100 ""]
+(
+	ElementLine [0 10000 15000 10000 1000]
+	ElementLine [15000 5000 0 5000 1000]
+	ElementLine [0 0 15000 0 1000]
+	ElementLine [15000 0 15000 10000 1000]
+	ElementLine [10000 0 10000 10000 1000]
+	ElementLine [5000 0 5000 10000 1000]
+	ElementLine [0 0 0 10000 1000]
+	ElementLine [1500 2500 8500 2500 1000]
+	ElementLine [1500 7500 8500 7500 1000]
+
+	)
+
+Element["" "" "" "" 149000 25000 0 0 2 100 ""]
+(
+	ElementLine [-15000 -10000 0 -10000 1000]
+	ElementLine [-15000 -5000 0 -5000 1000]
+	ElementLine [-15000 0 0 0 1000]
+	ElementLine [-15000 -10000 -15000 0 1000]
+	ElementLine [-10000 -10000 -10000 0 1000]
+	ElementLine [-5000 -10000 -5000 0 1000]
+	ElementLine [0 -10000 0 0 1000]
+	ElementLine [-8500 -2500 -1500 -2500 1000]
+	ElementLine [-8500 -7500 -1500 -7500 1000]
+
+	)
 Layer(1 "component")
 (
 	Line[12500 3000 101000 3000 4000 2000 "clearline"]
@@ -1061,7 +1083,6 @@ Layer(1 "component")
 	Line[120000 42088 120000 42000 2500 2000 "clearline"]
 	Line[120000 42000 123500 38500 2500 2000 "clearline"]
 	Line[123500 38500 123500 33500 2500 2000 "clearline"]
-	Line[94500 19000 94500 26500 1000 2000 "clearline"]
 	Line[109000 37500 111000 39500 1000 2000 "clearline"]
 	Line[111000 39500 111000 42059 1000 2000 "clearline"]
 	Line[111000 42059 110971 42088 1000 2000 "clearline"]
@@ -1090,8 +1111,6 @@ Layer(1 "component")
 	Line[120000 53676 120000 59500 1000 2000 "clearline"]
 	Line[120000 59500 123000 62500 1000 2000 "clearline"]
 	Line[123000 62500 123000 66500 1000 2000 "clearline"]
-	Line[94500 26000 94500 33000 1000 2000 "clearline"]
-	Line[94500 33000 99000 37500 1000 2000 "clearline"]
 	Line[99000 37500 109000 37500 1000 2000 "clearline"]
 	Line[108412 42088 100588 42088 1000 2000 "clearline"]
 	Line[100588 42088 99250 40750 1000 2000 "clearline"]
@@ -1100,11 +1119,6 @@ Layer(1 "component")
 	Line[116000 57676 116088 57588 1000 2000 "clearline"]
 	Line[113529 57588 113529 60471 1000 2000 "clearline"]
 	Line[113529 60471 112500 61500 1000 2000 "clearline"]
-	Line[111500 69000 116500 74000 4000 2000 "clearline"]
-	Line[116500 74000 128000 74000 4000 2000 "clearline"]
-	Line[128000 74000 130000 72000 4000 2000 "clearline"]
-	Line[130000 72000 130000 68086 4000 2000 "clearline"]
-	Line[130000 68086 130086 68000 4000 2000 "clearline"]
 	Line[132500 7000 133500 6000 2500 2000 "clearline"]
 	Line[102500 5000 106000 1500 1000 2000 "clearline"]
 	Line[106000 1500 149000 1500 1000 2000 "clearline"]
@@ -1127,7 +1141,6 @@ Layer(1 "component")
 	Line[77500 48000 77500 41000 1000 2000 "clearline"]
 	Line[104500 48559 84559 48559 1000 2000 "clearline"]
 	Line[84559 48559 82500 46500 1000 2000 "clearline"]
-	Line[44000 53500 44000 48500 1000 2000 "clearline"]
 	Line[44000 48500 31000 35500 1000 2000 "clearline"]
 	Line[31000 35500 7000 35500 1000 2000 "clearline"]
 	Line[7000 35500 6500 36000 1000 2000 "clearline"]
@@ -1153,10 +1166,27 @@ Layer(1 "component")
 	Line[93500 64000 114500 64000 1000 2000 "clearline"]
 	Line[114500 64000 116000 62500 1000 2000 "clearline"]
 	Line[112500 61500 86000 61500 1000 2000 "clearline"]
-	Line[98000 69000 111500 69000 4000 2000 "clearline"]
-	Line[111500 69000 113000 70500 4000 2000 "clearline"]
 	Line[51000 55000 51000 39000 1000 2000 "clearline"]
 	Line[51000 39500 51000 35500 1000 2000 "clearline"]
+	Line[80000 32000 80000 39000 1000 2000 "clearline"]
+	Line[80000 39000 84000 43000 1000 2000 "clearline"]
+	Line[84000 43000 90500 43000 1000 2000 "clearline"]
+	Line[94500 19500 94500 28500 1000 2000 "clearline"]
+	Line[94500 28500 95500 29500 1000 2000 "clearline"]
+	Line[95500 29500 95500 36000 1000 2000 "clearline"]
+	Line[95500 36000 97000 37500 1000 2000 "clearline"]
+	Line[97000 37500 100500 37500 1000 2000 "clearline"]
+	Line[123000 66500 126000 69500 1000 2000 "clearline"]
+	Line[126000 69500 131500 69500 1000 2000 "clearline"]
+	Line[120000 74500 125000 74500 2500 2000 "clearline"]
+	Line[125000 74500 127000 76500 2500 2000 "clearline"]
+	Line[127000 76500 130500 76500 2500 2000 "clearline"]
+	Line[44000 48500 44000 55500 1000 2000 "clearline"]
+	Line[44000 55500 32500 67000 1000 2000 "clearline"]
+	Line[32500 67000 32500 74500 1000 2000 "clearline"]
+	Line[32500 74500 36000 78000 1000 2000 "clearline"]
+	Line[36000 78000 106500 78000 1000 2000 "clearline"]
+	Line[106500 78000 110000 74500 1000 2000 "clearline"]
 )
 Layer(2 "solder")
 (
@@ -1256,26 +1286,25 @@ Layer(5 "silk")
 	Line[179500 81500 179500 500 1000 2000 "clearline"]
 	Line[179500 500 500 500 1000 2000 "clearline"]
 	Text[13000 13000 0 100 "GND" "clearline"]
-	Text[13000 500 0 100 "VDD" "clearline"]
+	Text[13000 3000 0 100 "VDD" "clearline"]
 	Text[13000 22500 0 100 "SDA/MOSI" "clearline"]
 	Text[13000 32500 0 100 "MISO" "clearline"]
 	Text[13000 45500 0 100 "SCLK" "clearline"]
 	Text[13000 40000 0 100 "SCK /" "clearline"]
-	Text[12000 52500 0 100 "/IRQ" "clearline"]
 	Text[13000 73000 0 100 "/CS" "clearline"]
 	Text[13500 63000 0 100 "SI" "clearline"]
 	Text[117500 3000 0 100 "SPI" "clearline"]
 	Text[160500 2500 0 100 "I2C" "clearline"]
-	Text[151000 17000 0 100 "3V" "clearline"]
-	Text[151000 29500 0 100 "5V" "clearline"]
-	Text[127000 38000 1 100 "JP1 CONF" "clearline"]
 	Text[54000 74500 0 100 "=0" "clearline"]
 	Text[79000 74500 0 100 "=1" "clearline"]
 	Text[92000 74500 0 100 "=0" "clearline"]
 	Text[42000 74500 0 100 "=1" "clearline"]
 	Text[27000 74500 0 100 "ADD0" "clearline"]
 	Text[65000 74500 0 100 "ADD1" "clearline"]
-	Text[107000 73500 0 100 "http://www.iascaled.com" "clearline"]
+	Text[12500 52500 0 100 "/IRQ" "clearline"]
+	Text[127000 38000 1 100 "JP1 CONF" "clearline"]
+	Text[151000 29500 0 100 "5V" "clearline"]
+	Text[151000 17000 0 100 "3V" "clearline"]
 )
 NetList()
 (
@@ -1304,6 +1333,8 @@ NetList()
 		Connect("JP2-3")
 		Connect("JP3-3")
 		Connect("JP4-3")
+		Connect("JP5-2")
+		Connect("JP6-2")
 		Connect("U1-4")
 		Connect("U1-17")
 	)
@@ -1347,6 +1378,7 @@ NetList()
 	Net("unnamed_net7" "(unknown)")
 	(
 		Connect("J1-4")
+		Connect("JP6-1")
 		Connect("U1-12")
 	)
 	Net("unnamed_net8" "(unknown)")
@@ -1370,6 +1402,7 @@ NetList()
 	Net("unnamed_net11" "(unknown)")
 	(
 		Connect("J1-8")
+		Connect("JP5-1")
 		Connect("U1-8")
 	)
 	Net("unnamed_net12" "(unknown)")
