@@ -188,18 +188,22 @@ C 61400 53200 1 90 0 res-pack2-1.sym
 T 61100 53695 5 10 1 1 90 0 1
 refdes=R2
 T 61400 53200 5 10 0 0 0 0 1
-slot=2
+slot=1
 T 61100 54100 5 10 1 1 90 0 1
 value=10k
+T 61400 53200 5 10 0 0 0 0 1
+footprint=RPACK2-0606
 }
 C 60800 53200 1 90 0 res-pack2-1.sym
 {
 T 60500 53695 5 10 1 1 90 0 1
 refdes=R2
 T 60800 53200 5 10 0 0 0 0 1
-slot=1
+slot=2
 T 60500 54100 5 10 1 1 90 0 1
 value=10k
+T 60800 53200 5 10 0 0 0 0 1
+footprint=RPACK2-0606
 }
 C 61900 55100 1 0 0 SolderJumperOpen-3.sym
 {
@@ -233,7 +237,7 @@ refdes=TP1
 T 62300 57900 5 10 0 0 0 0 1
 device=TESTPOINT
 T 62300 57700 5 10 0 0 0 0 1
-footprint=none
+footprint=RCT0805
 }
 N 62000 57000 62000 56700 4
 N 62000 56700 60300 56700 4
